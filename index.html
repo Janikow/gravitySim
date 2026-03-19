@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- The visible content of the web page goes here -->
-    <canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #000000;">
+    <canvas id="myCanvas" width="1200" height="400" style="border:1px solid #000000;">
     </canvas>
 
     <script>
@@ -22,13 +22,13 @@
             ctx.arc(95, 50, 40, 0, 2 * Math.PI);
             ctx.stroke();
         }
+
         ctx.beginPath();
         ctx.arc(95, 50, 20, 0, 2 * Math.PI);
         ctx.stroke();
 
-        await delay(10000);
-
         drawCircle();
+        setTimeout(drawCircle, 10000);
     </script>
 </body>
 </html>
